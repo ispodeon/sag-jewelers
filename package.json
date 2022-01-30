@@ -25,6 +25,7 @@
     "@angular/router": "~13.2.0",
     "@schematics/angular": "^13.2.0",
     "@schematics/update": "^0.1102.18",
+    "bootstrap": "^4.6.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

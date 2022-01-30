@@ -1,0 +1,16 @@
+<mat-card *ngFor="let price of priceSpread.spreadProfilePrices" class="example-card">
+    <mat-card-title>{{priceSpread.topo.platform}}</mat-card-title>
+    <mat-card-subtitle>{{priceSpread.topo.platform}}</mat-card-subtitle>
+    <mat-card-content>
+      <p>Spread Info</p>
+      <p>{{price.spreadProfile}}</p>
+      <p>{{price.bidSpread}}</p>
+      <p>{{price.askSpread}}</p>
+      <p>{{price.bid}}</p>
+      <p>{{price.ask}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>

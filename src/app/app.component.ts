@@ -13,8 +13,15 @@ export class AppComponent implements OnInit{
   labelPosition: 'before' | 'after' = 'after';
   disabled = false;
 
+  clicked = true;
+
   constructor(){}
 
   ngOnInit(): void {
+  }
+
+  tableClicked(){
+    console.log('clicked');
+    this.clicked = !this.clicked;
   }
 }

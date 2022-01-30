@@ -1,0 +1,27 @@
+import { Component, OnInit } from '@angular/core';
+import { PriceSpread } from '../interfaces/price-spread';
+import { LiveRateService } from '../live-rate.service';
+@Component({
+  selector: 'app-gold-rate',
+  templateUrl: './gold-rate.component.html',
+  styleUrls: ['./gold-rate.component.scss']
+})
+export class GoldRateComponent implements OnInit {
+  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
+  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+  originally bred for hunting.`;
+
+  // priceSpreads!: PriceSpread[];
+  priceSpread!: PriceSpread;
+  platform:string = 'Searching...';
+  server:string = 'Searching...';
+
+  constructor(private rateService: LiveRateService) { }
+
+  ngOnInit(): void {
+    this.rateService.getSpread().subscribe(
+      (values) => (this.priceSpread = values[0])
+    );
+  }
+
+}

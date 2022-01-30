@@ -1,4 +1,4 @@
-<mat-card *ngFor="let price of priceSpread.spreadProfilePrices" class="example-card">
+<!-- <mat-card *ngFor="let price of priceSpread.spreadProfilePrices" class="example-card">
     <mat-card-title>{{priceSpread.topo.platform}}</mat-card-title>
     <mat-card-subtitle>{{priceSpread.topo.platform}}</mat-card-subtitle>
     <mat-card-content>
@@ -13,4 +13,37 @@
       <button mat-button>LIKE</button>
       <button mat-button>SHARE</button>
     </mat-card-actions>
+  </mat-card> -->
+
+  <mat-card>
+    <div class="row">
+      <div class="col-6">
+        <mat-card-title-group>
+          <mat-card-title>Gram:</mat-card-title>
+          <mat-card-subtitle>$63.05</mat-card-subtitle>
+        </mat-card-title-group>
+        <mat-card-title-group>
+          <mat-card-title>Tola:</mat-card-title>
+          <mat-card-subtitle>$731.38</mat-card-subtitle>
+        </mat-card-title-group>
+      </div>
+      <div class="col-6">
+        <!-- <mat-card-content>
+          <p>{{longText}}</p>
+        </mat-card-content> -->
+        <mat-card-title-group>
+          <img mat-card-lg-image src="https://3docean.img.customer.envatousercontent.com/files/319217563/gold_wide.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=19a0e3b38b7de22a296bfcb34bbf6535" >
+        </mat-card-title-group>
+        
+      </div>
+      <!-- <div class="col-12">
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </div> -->
+    </div>
+    
+    
+
   </mat-card>

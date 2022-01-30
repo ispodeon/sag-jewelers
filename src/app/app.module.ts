@@ -8,18 +8,22 @@ import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { GoldRateComponent } from './gold-rate/gold-rate.component';
 import { LiveRateService } from './live-rate.service';
+import { CatalogComponent } from './catalog/catalog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GoldRateComponent
+    GoldRateComponent,
+    CatalogComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,9 @@ import { LiveRateService } from './live-rate.service';
     MatCardModule,
     MatRadioModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [LiveRateService],
   bootstrap: [AppComponent]

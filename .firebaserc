@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sagjewelers": {
+      "hosting": {
+        "sag-jewelers": [
+          "sagjewelers"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sagjewelers"
+  }
+}

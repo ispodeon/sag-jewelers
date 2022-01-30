@@ -4,4 +4,5 @@ export interface Jewelry{
     weight: string;
     description: string;
     price: number;
+    category: string;
 }

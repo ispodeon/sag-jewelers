@@ -49,9 +49,9 @@ ts: 505};
     // this.rateService.getSpread().subscribe(
     //   (values) => (this.priceSpread = values[0])
     // );
-    this.rateService.getWeather().subscribe(
-      (value) => (console.log(value))
-    );
+    // this.rateService.getWeather().subscribe(
+    //   (value) => (console.log(value))
+    // );
   }
 
 }

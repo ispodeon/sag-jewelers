@@ -23,11 +23,14 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { HomeComponent } from './home/home.component';
 import { CatalogListItemComponent } from './catalog-list-item/catalog-list-item.component';
 import { JewelryItemComponent } from './jewelry-item/jewelry-item.component';
+import { AddressCardComponent } from './about/address-card/address-card.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'catalog', component: CatalogComponent },
-  { path: 'jewelry', component: JewelryItemComponent }
+  { path: 'jewelry', component: JewelryItemComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
@@ -37,7 +40,9 @@ const appRoutes: Routes = [
     CatalogComponent,
     HomeComponent,
     CatalogListItemComponent,
-    JewelryItemComponent
+    JewelryItemComponent,
+    AddressCardComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

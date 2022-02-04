@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSelectionListChange } from '@angular/material/list';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,8 @@ export class AppComponent implements OnInit{
 
   clicked = true;
 
+  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+
   constructor(){}
 
   ngOnInit(): void {
@@ -23,5 +26,9 @@ export class AppComponent implements OnInit{
   tableClicked(){
     console.log('clicked');
     this.clicked = !this.clicked;
+  }
+
+  listSelect(event: MatSelectionListChange){
+    console.log(event);
   }
 }

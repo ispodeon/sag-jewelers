@@ -26,3 +26,17 @@
   .col-4 {
     margin-top: 16px;
   }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  mat-toolbar-row.mat-toolbar-row span h1 {
+    font-size: 36px;
+  }
+
+  ::ng-deep [mat-flat-button].mat-flat-button span.mat-button-wrapper {
+    color: #3F51B5;
+    padding-inline: 36px;
+    font-size: 18px;
+  }

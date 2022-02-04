@@ -1,18 +1,58 @@
 <mat-toolbar color="primary">
-  <mat-icon>diamond</mat-icon>
-  <span>Jewelers</span>
+  
+  <mat-toolbar-row>
+    <mat-icon>diamond</mat-icon>
+    <span><h1>Jewelers</h1></span>
+    <span class="example-spacer"></span>
+    <span><button mat-flat-button routerLink="/">Home</button></span>
+    <span class="example-spacer"></span>
+    <span><button mat-flat-button routerLink="/catalog">Catalog</button></span>
+    <span class="example-spacer"></span>
+    <span><button mat-flat-button>Contact</button></span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon  matBadge="15" matBadgeColor="accent">shopping_cart</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
 </mat-toolbar>
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <app-gold-rate></app-gold-rate>
+      <!-- <app-gold-rate></app-gold-rate> -->
+      
     </div>
   </div>
   <div class="row">
     <div class="col-12">
-      <app-catalog></app-catalog>
+      <router-outlet></router-outlet>
     </div>
   </div>
+  <!-- <div class="row">
+    <div class="col-12">
+      <mat-selection-list (selectionChange)="listSelect($event)" #shoes [multiple]="false">
+        <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
+          {{shoe}}
+        </mat-list-option>
+      </mat-selection-list>
+      
+      <p>
+        Option selected: {{shoes.selectedOptions.selected[0]?.value}}
+      </p>
+      
+    </div>
+  </div> -->
+  <!-- <div class="row">
+    <div class="col-12">
+      <button mat-raised-button>Basic</button>
+      <button mat-raised-button color="primary">Primary</button>
+      <button mat-raised-button color="accent">Accent</button>
+      <button mat-raised-button color="warn">Warn</button>
+      <button mat-raised-button disabled>Disabled</button>
+    </div>
+  </div> -->
   <!-- <div class="row">
     <div class="col-4">
       <mat-card>

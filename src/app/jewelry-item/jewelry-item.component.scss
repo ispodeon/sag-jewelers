@@ -1,0 +1,14 @@
+.row .col-12.centered {
+    display:grid;
+    place-items: center;
+}
+
+mat-card-content.mat-card-content .box {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+mat-card.mat-card {
+    // display:grid;
+    // place-items: center;
+}

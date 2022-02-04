@@ -1,0 +1,13 @@
+.col-12 .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+mat-card {
+    margin: 16px;
+}

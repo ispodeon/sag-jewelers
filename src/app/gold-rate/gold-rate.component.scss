@@ -3,3 +3,15 @@
     display: grid;
     grid-template-rows: auto auto;
 }
+mat-card.mat-card {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,180,83,1) 59%);
+    max-width: 250px;
+    max-height: 110px;
+    color:white;
+    padding: 4px;
+}
+
+mat-card-subtitle.mat-card-subtitle {
+    color: white;
+}

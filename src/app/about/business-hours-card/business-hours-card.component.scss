@@ -1,0 +1,7 @@
+.example-card {
+    max-width: 350px;
+}
+mat-card.example-card mat-card-content{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}

@@ -1,0 +1,11 @@
+.example-card {
+    max-width: 350px;
+}
+.example-card .section {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+mat-card-subtitle.mat-card-subtitle {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}

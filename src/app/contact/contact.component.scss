@@ -1,17 +1,4 @@
-$primary-color:#3F51B5;
-.example-card {
-    width: 350px;
-}
-.example-card .card-split{
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-}
-button.mat-stroked-button.directions {
-    border-radius: 16px;
-    color: white;
-    background-color: $primary-color;
-}
-
-mat-card-actions.mat-card-actions {
-    padding: 0px;
+@media 
+(max-width: 768px) {
+  .col-md-6 {margin-bottom: 16px;}
 }

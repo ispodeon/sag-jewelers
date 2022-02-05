@@ -1,0 +1,17 @@
+$primary-color:#3F51B5;
+.example-card {
+    max-width: 350px;
+}
+.example-card .card-split{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+button.mat-stroked-button.directions {
+    border-radius: 16px;
+    color: white;
+    background-color: $primary-color;
+}
+
+mat-card-actions.mat-card-actions {
+    padding: 0px;
+}

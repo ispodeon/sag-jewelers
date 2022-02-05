@@ -10,7 +10,7 @@
     <span class="example-spacer"></span>
     <span><button mat-flat-button routerLink="/contact">Contact</button></span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <button mat-icon-button routerLink="/cart" class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon  matBadge="15" matBadgeColor="accent">shopping_cart</mat-icon>
     </button>
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
@@ -20,7 +20,7 @@
 </mat-toolbar>
 <div class="container">
   <div class="row">
-    <div class="col-12">
+    <div class="col-12" style="padding-top: 16px;">
       <router-outlet></router-outlet>
     </div>
   </div>

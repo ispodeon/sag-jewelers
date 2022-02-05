@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+$background-app: #A2ACB6;
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #fff;}
 .mat-body, .mat-body-1, .mat-typography {
-    background-color: #A2ACB6;
+    background-color: $background-app;
 }

@@ -1,0 +1,29 @@
+mat-divider {
+    padding: 8px;
+    width: -webkit-fill-available;
+    border-top-width: 4px;
+    border-top-color: white;
+}
+mat-divider.item-divider {
+    padding: 8px;
+    width: 50%;
+    border-top-width: 4px;
+    border-top-color: white;
+}
+.test2 h2 {
+    background-color: green;
+}
+.test {
+    background-color: rebeccapurple;
+}
+.test2 {
+    background-color: grey;
+}
+::ng-deep .mat-typography h2 {
+    margin: 0px;
+}
+
+mat-card.mat-card:not([class*=mat-elevation-z]) {
+    background-color: #A2ACB6;
+    box-shadow: 0 0 0 0;
+}

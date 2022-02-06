@@ -1,0 +1,59 @@
+<div class="row align-items-center justify-content-center">
+    <div class="col">
+        <div  class="row container">
+            <!-- <div style="width:400px;" class="middle"> -->
+            <div class="other"></div>
+            <div  class="middle">
+                <div class="col-12">
+                    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                </div>
+                <div class="col-12">
+                <!-- <div class="col-12 bg-dark"> -->
+                    <div class="price_style">
+                    <!-- <div class="price_style bg-light"> -->
+                        <mat-icon>task_alt</mat-icon>
+                        <h3>LMBRJK</h3>
+                        <div class="space"></div>
+                        <h2>$240</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h1>Flow Shirt Blouse</h1>
+                </div>
+                <div class="col-12 desc-para">
+                    <p>Pinstriped cornflower blue cotton blouse takes you on a walk to the park or just down the hall.</p>
+                </div>
+                <div class="col-12">
+                    <mat-form-field class="desc-para" clear>
+                        <mat-label>MORE DETAILS</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let food of ['some','ting','wong']" [value]="food">
+                            {{food}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                </div>
+                <div class="col-12">
+                    <h2>Select size</h2>
+                </div>
+                <div class="col-12">
+                    <mat-button-toggle-group name="favoriteSize" aria-label="Favorite Color">
+                        <mat-button-toggle *ngFor="let size of sizes" value="{{size}}">{{size}}</mat-button-toggle>
+                      </mat-button-toggle-group>
+                </div>
+                <div class="col-12">
+                    <hr>
+                </div>
+                <div class="col-12">
+                    <h2>Color</h2>
+                </div>
+                <div class="col-12">
+                    <mat-button-toggle-group class="favoriteColor" name="favoriteColor" aria-label="Favorite Color">
+                        <mat-button-toggle [ngStyle]="{'background-color': color, 'color': color}" *ngFor="let color of colors" >00</mat-button-toggle>
+                      </mat-button-toggle-group>
+                </div>
+            </div>
+            <div class="other"></div>
+        </div>
+    </div>
+</div>

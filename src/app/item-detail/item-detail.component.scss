@@ -1,0 +1,43 @@
+$max-width: 370px;
+
+.col-12 .price_style {
+    display: grid;
+    grid-template-columns: 15% min(25%) 1fr auto;
+    padding: 4px;
+}
+.col-12 img {
+    width: $max-width;
+}
+.row.container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+.desc-para {
+    width: $max-width;
+}
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: rgba(0,0,0,0);
+    // background-color: rgba(0,0,0,0);
+}
+
+.mat-button-toggle-group-appearance-standard {
+    border: 0;
+}
+
+.mat-button-toggle-appearance-standard {
+    background: none;
+    border-radius: 16px;
+    border-style: solid;
+}
+
+
+::ng-deep .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 36px;
+}
+
+.mat-button-toggle-appearance-standard {
+    margin-inline: 4px;
+}
+.favoriteColor mat-button-toggle {
+    // padding: 8px;
+}

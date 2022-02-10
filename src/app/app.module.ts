@@ -15,6 +15,7 @@ import { MatListModule } from '@angular/material/list';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,10 +28,12 @@ import { CatalogListItemComponent } from './catalog-list-item/catalog-list-item.
 import { JewelryItemComponent } from './jewelry-item/jewelry-item.component';
 import { AddressCardComponent } from './about/address-card/address-card.component';
 import { ContactComponent } from './contact/contact.component';
-import { ContactCardComponent } from './about/contact-card/contact-card.component';
+import { ContactCardComponent, DialogContent } from './about/contact-card/contact-card.component';
 import { BusinessHoursCardComponent } from './about/business-hours-card/business-hours-card.component';
 import { CartComponent } from './cart/cart.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
+
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -54,7 +57,8 @@ const appRoutes: Routes = [
     ContactCardComponent,
     BusinessHoursCardComponent,
     CartComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    DialogContent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +77,7 @@ const appRoutes: Routes = [
     MatBadgeModule,
     MatSelectModule,
     MatButtonToggleModule,
+    MatDialogModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [LiveRateService],

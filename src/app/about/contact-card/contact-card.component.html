@@ -9,10 +9,10 @@
                     <mat-card-subtitle>Make an appointment</mat-card-subtitle> -->
                     <!-- <mat-list> -->
                         <mat-card-title>Contact</mat-card-title>
-                        <mat-card-subtitle *ngFor="let contact of contacts">
+                        <mat-card-subtitle (click)="openDialog(i)" class="highlight-hover" *ngFor="let contact of contacts; let i = index">
                             <!-- <mat-list-item> -->
                                 <mat-icon>{{contact.icon}}</mat-icon>
-                                <div>{{contact.text}}</div>
+                                <div >{{contact.text}}</div>
                             <!-- </mat-list-item> -->
                         </mat-card-subtitle>
                     <!-- </mat-list> -->

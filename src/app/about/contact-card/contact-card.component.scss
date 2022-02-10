@@ -9,3 +9,6 @@ mat-card-subtitle.mat-card-subtitle {
     display: grid;
     grid-template-columns: auto 1fr;
 }
+:hover.highlight-hover {
+    color:blue;
+}

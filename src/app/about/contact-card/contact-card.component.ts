@@ -21,15 +21,24 @@ export class ContactCardComponent implements OnInit {
   }
 
   openDialog(i: number) {
+
     if(i == 2){
       console.log('message us');
-    }
-    const dialogRef = this.dialog.open(DialogContent);
+      const dialogRef = this.dialog.open(DialogContent);
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+    }
+    else if(i == 3) {
+      const dialogRef = this.dialog.open(AppointmentDialogContent);
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Appointment result: ${result}`);
+      });
+    }
   }
+    
 
 }
 
@@ -38,5 +47,13 @@ export class ContactCardComponent implements OnInit {
   templateUrl: 'dialog-content.html'
 })
 export class DialogContent {
+
+}
+
+@Component({
+  selector: 'appointment-content',
+  templateUrl: 'appointment-content.html'
+})
+export class AppointmentDialogContent {
 
 }
